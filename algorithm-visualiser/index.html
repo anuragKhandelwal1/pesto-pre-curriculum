@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <title>Alogithm Visualizer</title>
+    <script src="./index.js"></script>
+</head>
+
+<body onload="onLoad()">
+
+    <div class="h1 text-center d-block breadcrumb"> Algorithm Visualizer</div>
+
+    <div class="container d-flex mb-3">
+        <input id="datasetSize" class="form-control w-25 px-2 mx-2" type="number"
+            placeholder="Dataset Size (Default 10)" onblur="generateRandomDataSet()">
+        <input id="numberToSearch" class="form-control w-25 mx-2" type="number" placeholder="Enter Number To Search"
+            onblur="numberToBeSearched()">
+    </div>
+
+    <div class="algorithm-list container p-2 d-flex justify-content-around">
+        <p>Select An Algorithm:</p>
+        <button type="button" class="btn btn-primary" onclick="algorithmSelected('linear')">Linear Search</button>
+        <button type="button" class="btn btn-primary" onclick="algorithmSelected('binary')">Binary Search</button>
+        <button type="button" class="btn btn-info" onclick="algorithmSelected('selection')">Selection Sort</button>
+        <button type="button" class="btn btn-info" onclick="algorithmSelected('Bubble')">Bubble Sort</button>
+        <button type="button" class="btn btn-outline-dark" onclick="reset()">Reset</button>
+    </div>
+
+
+
+    <div class="conatiner p-3" id="visualizer">
+
+    </div>
+
+</body>
+
+</html>
