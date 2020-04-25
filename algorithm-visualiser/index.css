@@ -22,3 +22,19 @@
     text-align: center;
     margin-right: 15px;
 }
+
+#visualizer > div.success {
+    color: white;
+    background-color: rgb(30, 218, 30);
+    width: 30px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+#visualizer > div.primary {
+    color: white;
+    background-color: blue;
+    width: 30px;
+    text-align: center;
+    margin-right: 15px;
+}

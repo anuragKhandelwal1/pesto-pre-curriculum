@@ -18,8 +18,7 @@
     <div class="container d-flex mb-3">
         <input id="datasetSize" class="form-control w-25 px-2 mx-2" type="number"
             placeholder="Dataset Size (Default 10)" onblur="generateRandomDataSet()">
-        <input id="numberToSearch" class="form-control w-25 mx-2" type="number" placeholder="Enter Number To Search"
-            onblur="numberToBeSearched()">
+        <input id="numberToSearch" class="form-control w-25 mx-2" type="number" placeholder="Enter Number To Search">
     </div>
 
     <div class="algorithm-list container p-2 d-flex justify-content-around">
@@ -27,7 +26,7 @@
         <button type="button" class="btn btn-primary" onclick="algorithmSelected('linear')">Linear Search</button>
         <button type="button" class="btn btn-primary" onclick="algorithmSelected('binary')">Binary Search</button>
         <button type="button" class="btn btn-info" onclick="algorithmSelected('selection')">Selection Sort</button>
-        <button type="button" class="btn btn-info" onclick="algorithmSelected('Bubble')">Bubble Sort</button>
+        <button type="button" class="btn btn-info" onclick="algorithmSelected('bubble')">Bubble Sort</button>
         <button type="button" class="btn btn-outline-dark" onclick="reset()">Reset</button>
     </div>
 
